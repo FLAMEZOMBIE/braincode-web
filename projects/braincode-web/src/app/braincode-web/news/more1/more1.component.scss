@@ -1,0 +1,12 @@
+@import '../../../../styles-variables';
+
+.midContainer {
+  /* background: url(../images/bg.jpg) no-repeat; */
+  background-color: #f6f6f6;
+  margin-top: -50px;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  z-index: -1;
+}

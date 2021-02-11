@@ -9,25 +9,19 @@ import { ROUTE_ANIMATIONS_ELEMENTS } from '../../core/core.module';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ServicesComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor(private router : Router) { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
-  submenu(url:string){
-    if(url == "sub1"){
+  submenu(url: string) {
+    if (url == 'sub1') {
       this.router.navigate(['/braincode-web/services/sub1']);
-    }
-    else if( url == "sub2"){
+    } else if (url == 'sub2') {
       this.router.navigate(['/braincode-web/services/sub2']);
+    } else if (url == 'sub3') {
+      this.router.navigate(['/braincode-web/services/sub3']);
+    } else {
+      this.router.navigate(['/braincode-web/services/sub4']);
     }
-   else if (url == "sub3"){
-    this.router.navigate(['/braincode-web/services/sub3']);
-   }
-  else {
-    this.router.navigate(['/braincode-web/services/sub4']);
-    }
-    
   }
 }
