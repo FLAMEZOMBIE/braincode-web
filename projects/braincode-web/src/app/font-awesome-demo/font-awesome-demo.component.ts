@@ -12,12 +12,9 @@ library.add(fas, far);
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FontAwesomeDemoComponent implements OnInit {
-
   filmIcon = faFilm;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

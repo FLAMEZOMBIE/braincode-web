@@ -9,9 +9,15 @@ import { Sub2Component } from './services/sub2/sub2.component';
 import { Sub3Component } from './services/sub3/sub3.component';
 import { Sub4Component } from './services/sub4/sub4.component';
 
-
 @NgModule({
-  declarations: [BraincodeWebComponent, ServicesComponent, Sub1Component, Sub2Component, Sub3Component, Sub4Component ],
-  imports: [CommonModule, BraincodeWebRoutingModule,MatButtonModule]
+  declarations: [
+    BraincodeWebComponent,
+    ServicesComponent,
+    Sub1Component,
+    Sub2Component,
+    Sub3Component,
+    Sub4Component
+  ],
+  imports: [CommonModule, BraincodeWebRoutingModule, MatButtonModule]
 })
 export class BraincodeWebModule {}

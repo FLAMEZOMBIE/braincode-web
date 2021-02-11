@@ -12,7 +12,7 @@ const content = fs.readFileSync(TARGET, 'utf8');
 
 const data = contributors
   .map(
-    c => `
+    (c) => `
   <a class="contributor" href="${c.profile}" rel="noopener noreferrer" target="_blank">
     <img alt src="${c.avatar_url}">
     <span>${c.name}</span>
