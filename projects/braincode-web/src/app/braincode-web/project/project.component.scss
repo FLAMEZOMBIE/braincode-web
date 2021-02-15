@@ -1,0 +1,36 @@
+.midContainer {
+    /* background: url(../images/bg.jpg) no-repeat; */
+    background-color: #f6f6f6;
+    margin-top: -50px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* @media (min-width: 992px)
+.container {
+    width: 970px;
+}
+@media (min-width: 768px)
+.container {
+    width: 750px;
+} */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
