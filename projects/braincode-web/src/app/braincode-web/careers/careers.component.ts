@@ -17,7 +17,15 @@ export class CareersComponent implements OnInit {
 
   ngOnInit() {}
 
-  subMenu(){
-    this.router.navigate(['/braincode-web/careers/android-programmer']);
+  subMenu(url : string){
+    if(url == "android-programmer"){
+      this.router.navigate(['/braincode-web/careers/android-programmer']);
+    }
+    else if(url == "graphic-designer"){
+      this.router.navigate(['/braincode-web/careers/graphic-designer']);
+    }
+    else{
+      this.router.navigate(['/braincode-web/careers/uiux-designer']);
+    }
   }
 }

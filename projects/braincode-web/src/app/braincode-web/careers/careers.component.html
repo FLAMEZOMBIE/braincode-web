@@ -1,9 +1,188 @@
-<div class="background">
-  <div class="gradient">
-    <div class="container">
-<div class="actions">
-<button class="test" (click)="subMenu()">Android Programmer </button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="all" />
+    <meta name="author" content="Braincode Solution" />
+    <meta name="copyright" content="Braincode Solution" />
+    <meta name="generator" content="Braincode Solution" />
+    
+    <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://braincodesolution.com/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://braincodesolution.com/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="http://braincodesolution.com/assets/css/brands.min.css">
+    <link rel="stylesheet" href="http://braincodesolution.com/assets/css/solid.min.css">  
+    <link rel="stylesheet" href="http://braincodesolution.com/assets/css/custom.css">  
+    <link rel="stylesheet" href="http://braincodesolution.com/assets/css/client.css">
+    <link rel="stylesheet" type="text/css" href="http://braincodesolution.com/assets/themify-icons/themify-icons.css" media="all">
+    
+    <title>Careers - Braincode Solution</title>
+  </head>
+
+<body>
+
+<!-- content -->
+
+<div class="container midContainer">
+<div class="Content3">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="text-center bottom25px"><h1 class="font-bold bottom25px">FANCY JOINING THE TEAM?</h1>
+              <h4><p>We’re always on the lookout for new talent and people to join us. If you like what you see and fancy joining the BrainCode Team, read on and see who we’re currently hiring. </p></h4>
+              </div>
+          </div>
+      </div>
+      
+      <div class="row" style="background-color:#fff;padding:20px;">
+        <div class="col-md-12 desktop-padding"><div class="with-divider"><span class="taglines">Join the engage family</span> <h2>CURRENT OPENINGS</h2></div>
+            <div class="career-description"><p>We pride ourselves on being quick learners with an insatiable appetite for new knowledge and skills, and that’s the quality that unites all of our staff—from our interns to our president. If that sounds like you, consider applying to one of our open positions. Full-time positions come with competitive salary and generous benefits.</p>
+            <p>If you don’t see anything that fits your background, please send your resume to jobs@braincodesolution.com —we’re always keeping our eye out for good people.</p>
+            </div>
+        </div>
+      </div>
+            <div class="row" style="background-color:#fff">
+        <div class="col-sm-9 col-sm-offset-2">
+            <div class="job"><h1 class="post-title">Android Programmer</h1>
+            <div class="job-description"><p>Responsibilities :Membangun aplikasi android / mobile appsMerancang sistem aplikasi, pemrograman, coding </p>
+            </div>
+            <button class="test" (click)="subMenu('android-programmer')">Read More</button>
+            <span aria-hidden="true" class="ti-briefcase"></span>
+            </div>
+        </div>
+      </div>
+            <div class="row" style="background-color:#fff">
+        <div class="col-sm-9 col-sm-offset-2">
+            <div class="job"><h1 class="post-title">Graphic Designer</h1>
+            <div class="job-description"><p>-Interact with clients to determine and analyze the scope of a project-Review final layouts to make needed suggestions for improvement-Recommend to clients strategies to reach a certain audience-Design graphics that identify a product or communicate an ideaetc</p>
+            </div>
+            <div>
+            <button class="test" (click)="subMenu('graphic-designer')">Read More</button>
+            </div>
+            <span aria-hidden="true" class="ti-briefcase"></span>
+            </div>
+        </div>
+      </div>
+            <div class="row" style="background-color:#fff">
+        <div class="col-sm-9 col-sm-offset-2">
+            <div class="job"><h1 class="post-title">UIUX Designer</h1>
+            <div class="job-description"><p>Gathering user requirements, designing graphic elements and building navigation components for Web-based Application or Mobile Application</p>
+            </div>
+            <button class="test" (click)="subMenu('uiux-designer')">Read More</button>
+            <span aria-hidden="true" class="ti-briefcase"></span>
+            </div>
+        </div>
+      </div>
+             
+    </div>
 </div>
-</div>
-</div>
-</div>
+<!-- /content -->
+
+<script src="http://braincodesolution.com/assets/js/jquery.min.js"></script>
+<script src="http://braincodesolution.com/assets/js/bootstrap.min.js"></script>
+
+<!-- untuk menu ketika scroll -->
+<script>
+$(function(){
+    var hasBeenTrigged = false;
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 85 && !hasBeenTrigged) {
+            $(".navmenu").addClass("affix");
+            hasBeenTrigged = true;
+        }
+    });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() <= 0) {
+            $(".navmenu").removeClass("affix");
+            hasBeenTrigged = false;
+        }
+    });
+
+    var someImg = $('.someImg');
+    if (someImg.width() > someImg.height()){
+        //it's a landscape
+        $('.someImg').css('height', '100%');
+    } else if (someImg.width() < someImg.height()){
+        //it's a portrait
+        $('.someImg').css('height', '260px');
+    } else {
+        //image width and height are equal, therefore it is square.
+        // alert('square');
+    }
+
+});
+</script> <!-- /untuk menu ketika scroll -->
+
+<!-- untuk ScrolltoTop -->
+<script>    
+	jQuery(document).ready(function() {
+		var offset = 220;
+		var duration = 500;
+		jQuery(window).scroll(function() {
+			if (jQuery(this).scrollTop() > offset) {
+				jQuery('.crunchify-top').fadeIn(duration);
+			} else {
+				jQuery('.crunchify-top').fadeOut(duration);
+			}
+		});
+ 
+		jQuery('.crunchify-top').click(function(event) {
+			event.preventDefault();
+			jQuery('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		});
+	});
+</script> <!-- /untuk ScrolltoTop -->
+
+<!-- untuk logo client pada mobile -->
+<script>
+(function(){
+  // $('.carousel').carousel({ interval: false });
+  
+
+  if($(window).width() <= 767){
+    $('#carousel123').carousel({ interval: 3000 });
+  }else{
+    $('#carousel123 .item').addClass('active');
+  }
+  $(window).resize(function(){
+    if($(window).width() <= 767){
+      $('#carousel123 .item').removeClass('active');
+      $('#carousel123 .item:first-child').addClass('active');
+      $('#carousel123').carousel({ interval: 3000 });
+    }else{
+      $('#carousel123 .item').addClass('active');
+    }
+  });
+
+
+  $('#carouselABC').carousel({ interval: 3600 });
+}());
+
+(function(){
+  $('.carousel-showsixmoveone .item').each(function(){
+    var itemToClone = $(this);
+
+    for (var i=1;i<6;i++) {
+      itemToClone = itemToClone.next();
+
+      // wrap around if at end of item collection
+      if (!itemToClone.length) {
+        itemToClone = $(this).siblings(':first');
+      }
+
+      // grab item, clone, add marker class, add to collection
+      itemToClone.children(':first-child').clone()
+        .addClass("cloneditem-"+(i))
+        .appendTo($(this));
+    }
+  });
+}());
+</script>
+</body>
+</html>

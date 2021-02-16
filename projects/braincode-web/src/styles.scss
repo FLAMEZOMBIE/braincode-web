@@ -18,8 +18,7 @@
 @import './app/features/examples/theming/parent/parent.component.scss-theme';
 @import './app/features/examples/theming/child/child.component.scss-theme';
 @import './app/features/examples/examples/examples.component.scss-theme';
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
 @mixin custom-components-theme($theme) {
     @include anms-styles-reset-theme($theme);
     @include anms-app-component-theme($theme);

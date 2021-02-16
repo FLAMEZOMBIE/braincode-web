@@ -13,11 +13,12 @@ import { AppComponent } from '../app/app.component';
 import { AboutComponent } from './about/about.component';
 import { CareersComponent } from './careers/careers.component';
 
-
 @NgModule({
+
   declarations: [BraincodeWebComponent, ServicesComponent, Sub1Component, Sub2Component, Sub3Component, Sub4Component,AboutComponent,CareersComponent ],
   imports: [CommonModule, BraincodeWebRoutingModule,MatButtonModule,NgbModule],
   providers: [],
   bootstrap: [AppComponent]
+  imports: [CommonModule, BraincodeWebRoutingModule, MatButtonModule]
 })
 export class BraincodeWebModule {}

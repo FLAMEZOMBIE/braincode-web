@@ -10,7 +10,9 @@ const routes: Routes = [
   {
     path: 'braincode-web',
     loadChildren: () =>
-      import('./braincode-web/braincode-web.module').then((m) => m.BraincodeWebModule)
+      import('./braincode-web/braincode-web.module').then(
+        (m) => m.BraincodeWebModule
+      )
   },
   {
     path: 'about',
