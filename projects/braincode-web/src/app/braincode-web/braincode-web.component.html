@@ -1,0 +1,143 @@
+<link rel="stylesheet" href="braincode-web.component.scss">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="img">
+    <img class="mySlides " src="" style="display: none;">
+    <img class="mySlides " src="../../assets/mainimg/gagnikel.jpg" style="display: none;">
+    <img class="mySlides " src="../../assets/mainimg/geisa.jpg" style="display: none;">
+    <button class="w3-button w3-display-left " onclick="plusDivs(-1) ">&#10094;</button>
+    <button class="w3-button w3-display-right " onclick="plusDivs(+1) ">&#10095;</button>
+</div>
+<script>
+    var slideIndex = 1;
+    carousel();
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides ");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        };
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none ";
+        }
+        x[slideIndex - 1].style.display = "block ";
+    }
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides ");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none ";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        }
+        x[slideIndex - 1].style.display = "block ";
+        setTimeout(carousel, 10000);
+    }
+</script>
+
+<div>
+    <img src="../../assets/mainimg/home-about-new.jpg" class="imgabout ">
+    <div class="about ">
+        <h2>About Braincode Solution</h2>
+        <p>BrainCode is Indonesian leading specialist in developing mobile services.<br>BrainCode is an innovative and technically competent wireless content provider.<br>We are team of professionals having a lot of experiences in mobile industries.<br>We
+            have developed many mobile applications for our client within Indonesia and other countries.</p>
+        <div class="readmore">
+            <a (click)="submenu('sub1')">Read More About Us</a>
+            <a href=" ">Contact Us</a>
+        </div>
+    </div>
+</div>
+<div class="service">
+    <h2><b>Service</b></h2>
+    <div class="row">
+        <div class="column">
+            <h4><b>Ecommerce Website</b></h4>
+            <p>Develop e-commerce website to leverage your business and profit. We deliver on customer and business needs and build sites that sell.</p>
+        </div>
+        <div class="column">
+            <h4><b>Enterprise Solution</b></h4>
+            <p>Develop a solution for your company or organization ( ERP system ). Enterprise Resource Planning ( ERP ) is the integrated management of core business processes, often in real-time and mediated by software and technology.</p>
+        </div>
+        <div class="column">
+            <h4><b>Information System</b></h4>
+            <p>Develop a custom IT Solution for your various needs. Put the right technology solutions at the service of your business and your customers.</p>
+        </div>
+        <div class="column">
+            <h4><b>Mobile Apps Development</b></h4>
+            <p>Develop a custom application for various mobile devices such as : iOS, Android. Delivering the technical talent to build great apps and keep them running.</p>
+        </div>
+    </div>
+    <div class="readmore" style="margin-left: 43%;">
+        <a (click)="submenu('sub3')">Read More</a>
+    </div>
+</div>
+<div class="cardcontent">
+    <div class="card">
+        <img src="../../assets/mainimg/webp.net-resizeimage-3_thumb.png" alt="Avatar" style="width:100%; height: 235px;">
+        <div class="container">
+            <p><b>Samsung Showcases \'SelfieType\' Virtual Keyboard at CES 2020</b></p>
+            <a href="" style="color: red; text-decoration: none; cursor: pointer;">Read More</a>
+        </div>
+
+    </div>
+    <div class="card">
+        <img src="../../assets/mainimg/webp.net-resizeimage-5_thumb.png" alt="Avatar" style="width:100%; height: 235px;">
+        <div class="container">
+            <p><b>Apple, Amazon, Google partner to make smart home devices more compatible</b></p>
+            <a href="" style="color: red; text-decoration: none; cursor: pointer;">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../../assets/mainimg/webp.net-resizeimage-3_thumb (1).png" alt="Avatar" style="width:100%; height: 235px;">
+        <div class="container">
+            <p><b>Xiaomi opens second headquarters as it doubles down on AI development</b></p>
+            <a href="" style="color: red; text-decoration: none; cursor: pointer;">Read More</a>
+        </div>
+    </div>
+</div>
+<div class="jobs">
+    <img src="../../assets/mainimg/teamwork.jpg" alt="" class="team">
+    <div class="job">
+        <h3><b>Android Programmer<br>Graphic Designer<br>UIUX Designer</b></h3>
+    </div>
+    <div class="join">
+        <h2><b>Join Us</b></h2>
+        <a (click)="submenu('sub4')" style="padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: red;
+        text-align: center;
+        text-decoration: none;
+        color: white; cursor: pointer;">More Vacancies</a>
+    </div>
+</div>
+<div class="client">
+    <h2><b>Our Client</b></h2>
+    <div class="row">
+        <div class="column">
+            <img src="../../assets/mainimg/logomandiri_thumb.jpg" alt="" style="width: 70%;">
+        </div>
+        <div class="column">
+            <img src="../../assets/mainimg/logogag_nikel_thumb.jpg" alt="" style="width: 70%;">
+        </div>
+        <div class="column">
+            <img src="../../assets/mainimg/logoindosat_thumb.jpg" alt="" style="width: 70%;">
+        </div>
+        <div class="column">
+            <img src="../../assets/mainimg/logotelkomsel_thumb.jpg" alt="" style="width: 70%;">
+        </div>
+    </div>
+</div>
