@@ -12,27 +12,19 @@ export class BraincodeWebComponent implements OnInit {
   routeAnimationsElements = ROUTE_ANIMATIONS_ELEMENTS;
   // releaseButler = require('../../../../assets/release-butler.png').default;
 
-  constructor( private router: Router) {}
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  submenu(url:string){
-    if(url == "sub1"){
+  submenu(url: string) {
+    if (url == 'sub1') {
       this.router.navigate(['/braincode-web/about']);
+    } else if (url == 'sub2') {
+      this.router.navigate(['/braincode-web/contact']);
+    } else if (url == 'sub3') {
+      this.router.navigate(['/braincode-web/services']);
+    } else {
+      this.router.navigate(['/braincode-web/careers']);
     }
-    else if( url == "sub2"){
-      this.router.navigate(['/braincode-web/services/sub2']);
-    }
-   else if (url == "sub3"){
-    this.router.navigate(['/braincode-web/services']);
-   }
-   else if (url == "sub4"){
-    this.router.navigate(['/braincode-web/careers']);
-   }
-  else {
-    this.router.navigate(['/braincode-web/services/sub4']);
-    }
-    
   }
 }

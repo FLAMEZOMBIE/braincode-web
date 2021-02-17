@@ -8,9 +8,8 @@ describe('NmsIpBackboneComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NmsIpBackboneComponent ]
-    })
-    .compileComponents();
+      declarations: [NmsIpBackboneComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

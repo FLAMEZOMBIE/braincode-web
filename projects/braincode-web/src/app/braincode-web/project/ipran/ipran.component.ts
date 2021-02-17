@@ -1,6 +1,4 @@
-
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-
 
 @Component({
   selector: 'anms-ipran',
@@ -9,10 +7,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class IpranComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
