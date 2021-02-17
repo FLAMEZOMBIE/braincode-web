@@ -8,9 +8,8 @@ describe('GagNikelEProcurementComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GagNikelEProcurementComponent ]
-    })
-    .compileComponents();
+      declarations: [GagNikelEProcurementComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

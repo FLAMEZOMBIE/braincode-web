@@ -8,9 +8,8 @@ describe('BigDataComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BigDataComponent ]
-    })
-    .compileComponents();
+      declarations: [BigDataComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -8,9 +8,8 @@ describe('MandiriSalesKpiEngineComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MandiriSalesKpiEngineComponent ]
-    })
-    .compileComponents();
+      declarations: [MandiriSalesKpiEngineComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

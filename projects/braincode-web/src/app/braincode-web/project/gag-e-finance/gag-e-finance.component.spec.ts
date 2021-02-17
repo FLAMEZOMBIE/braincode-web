@@ -8,9 +8,8 @@ describe('GagEFinanceComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GagEFinanceComponent ]
-    })
-    .compileComponents();
+      declarations: [GagEFinanceComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

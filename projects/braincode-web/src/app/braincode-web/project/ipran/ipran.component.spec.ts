@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IpranComponent } from "./ipran.component";
+import { IpranComponent } from './ipran.component';
 
 describe('IpranComponent', () => {
   let component: IpranComponent;
@@ -8,9 +8,8 @@ describe('IpranComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ IpranComponent ]
-    })
-    .compileComponents();
+      declarations: [IpranComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

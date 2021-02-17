@@ -8,9 +8,8 @@ describe('UiuxDesignerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UiuxDesignerComponent ]
-    })
-    .compileComponents();
+      declarations: [UiuxDesignerComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

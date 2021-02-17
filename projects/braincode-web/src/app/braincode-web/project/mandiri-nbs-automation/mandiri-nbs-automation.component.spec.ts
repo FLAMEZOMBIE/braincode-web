@@ -8,9 +8,8 @@ describe('MandiriNbsAutomationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MandiriNbsAutomationComponent ]
-    })
-    .compileComponents();
+      declarations: [MandiriNbsAutomationComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

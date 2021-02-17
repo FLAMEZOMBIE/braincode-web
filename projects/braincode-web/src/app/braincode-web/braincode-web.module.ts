@@ -8,17 +8,31 @@ import { Sub1Component } from './services/sub1/sub1.component';
 import { Sub2Component } from './services/sub2/sub2.component';
 import { Sub3Component } from './services/sub3/sub3.component';
 import { Sub4Component } from './services/sub4/sub4.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from '../app/app.component';
 import { AboutComponent } from './about/about.component';
 import { CareersComponent } from './careers/careers.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-
-  declarations: [BraincodeWebComponent, ServicesComponent, Sub1Component, Sub2Component, Sub3Component, Sub4Component,AboutComponent,CareersComponent ],
-  imports: [CommonModule, BraincodeWebRoutingModule,MatButtonModule,NgbModule],
+  declarations: [
+    BraincodeWebComponent,
+    ServicesComponent,
+    Sub1Component,
+    Sub2Component,
+    Sub3Component,
+    Sub4Component,
+    AboutComponent,
+    CareersComponent,
+    ContactComponent
+  ],
+  imports: [
+    CommonModule,
+    BraincodeWebRoutingModule,
+    MatButtonModule,
+    NgbModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
-  imports: [CommonModule, BraincodeWebRoutingModule, MatButtonModule]
 })
 export class BraincodeWebModule {}

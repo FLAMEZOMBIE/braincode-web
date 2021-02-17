@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CorporateAccountManagementComponent } from "./CorporateAccountManagementComponent";
+import { CorporateAccountManagementComponent } from './CorporateAccountManagementComponent';
 
 describe('CorporateAccountManagementComponent', () => {
   let component: CorporateAccountManagementComponent;
@@ -8,9 +8,8 @@ describe('CorporateAccountManagementComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CorporateAccountManagementComponent ]
-    })
-    .compileComponents();
+      declarations: [CorporateAccountManagementComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

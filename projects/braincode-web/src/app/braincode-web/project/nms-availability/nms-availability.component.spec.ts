@@ -8,9 +8,8 @@ describe('NmsAvailabilityComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NmsAvailabilityComponent ]
-    })
-    .compileComponents();
+      declarations: [NmsAvailabilityComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {
