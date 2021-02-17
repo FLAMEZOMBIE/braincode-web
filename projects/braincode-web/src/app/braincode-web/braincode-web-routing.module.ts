@@ -16,6 +16,7 @@ import { More2Component } from './news/more2/more2.component';
 import { More3Component } from './news/more3/more3.component';
 import { More4Component } from './news/more4/more4.component';
 import { More5Component } from './news/more5/more5.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -64,6 +65,10 @@ const routes: Routes = [
       { path: 'more4', component: More4Component },
       { path: 'more5', component: More5Component }
     ]
+  },
+  {
+    path: 'contact',
+    children: [{ path: '', component: ContactComponent }]
   }
 ];
 
