@@ -23,6 +23,12 @@ export class BraincodeWebComponent implements OnInit {
       this.router.navigate(['/braincode-web/contact']);
     } else if (url == 'sub3') {
       this.router.navigate(['/braincode-web/services']);
+    } else if (url == 'sub4') {
+      this.router.navigate(['/braincode-web/news/more1']);
+    } else if (url == 'sub5') {
+      this.router.navigate(['/braincode-web/news/more2']);
+    } else if (url == 'sub6') {
+      this.router.navigate(['/braincode-web/news/more3']);
     } else {
       this.router.navigate(['/braincode-web/careers']);
     }

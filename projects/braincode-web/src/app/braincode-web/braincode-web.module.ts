@@ -13,6 +13,11 @@ import { AboutComponent } from './about/about.component';
 import { CareersComponent } from './careers/careers.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactComponent } from './contact/contact.component';
+import { More1Component } from './news/more1/more1.component';
+import { More2Component } from './news/more2/more2.component';
+import { More3Component } from './news/more3/more3.component';
+import { More4Component } from './news/more4/more4.component';
+import { More5Component } from './news/more5/more5.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { ContactComponent } from './contact/contact.component';
     Sub4Component,
     AboutComponent,
     CareersComponent,
-    ContactComponent
+    ContactComponent,
+    More1Component,
+    More2Component,
+    More3Component,
+    More4Component,
+    More5Component
   ],
   imports: [
     CommonModule,
