@@ -17,6 +17,19 @@ import { More3Component } from './news/more3/more3.component';
 import { More4Component } from './news/more4/more4.component';
 import { More5Component } from './news/more5/more5.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { InternetMonitoringComponent } from './projects/internet-monitoring/internet-monitoring.component';
+import { CorporateAccountManagementComponent } from './projects/corporate-account-management/CorporateAccountManagementComponent';
+import { GeisaComponent } from './projects/geisa/geisa.component';
+import { GagNikelEProcurementComponent } from './projects/gag-nikel-e-procurement/gag-nikel-e-procurement.component';
+import { MandiriSalesKpiEngineComponent } from './projects/mandiri-sales-kpi-engine/mandiri-sales-kpi-engine.component';
+import { IpranComponent } from './projects/ipran/ipran.component';
+import { BigDataComponent } from './projects/big-data/big-data.component';
+import { GagNikelEOperationComponent } from './projects/gag-nikel-e-operation/gag-nikel-e-operation.component';
+import { GagEFinanceComponent } from './projects/gag-e-finance/gag-e-finance.component';
+import { NmsIpBackboneComponent } from './projects/nms-ip-backbone/nms-ip-backbone.component';
+import { MandiriNbsAutomationComponent } from './projects/mandiri-nbs-automation/mandiri-nbs-automation.component';
+import { NmsAvailabilityComponent } from './projects/nms-availability/nms-availability.component';
 
 const routes: Routes = [
   {
@@ -69,6 +82,36 @@ const routes: Routes = [
   {
     path: 'contact',
     children: [{ path: '', component: ContactComponent }]
+  },
+  {
+    path: 'projects',
+    children: [
+      { path: '', component: ProjectsComponent },
+      { path: 'internet-monitoring', component: InternetMonitoringComponent },
+      {
+        path: 'corporate-account-management',
+        component: CorporateAccountManagementComponent
+      },
+      { path: 'geisa', component: GeisaComponent },
+      {
+        path: 'gag-nikel-e-procurement',
+        component: GagNikelEProcurementComponent
+      },
+      {
+        path: 'mandiri-sales-kpi-engine',
+        component: MandiriSalesKpiEngineComponent
+      },
+      { path: 'ipran', component: IpranComponent },
+      { path: 'big-data', component: BigDataComponent },
+      { path: 'gag-nikel-e-operation', component: GagNikelEOperationComponent },
+      { path: 'gag-e-finance', component: GagEFinanceComponent },
+      { path: 'nms-ip-backbone', component: NmsIpBackboneComponent },
+      {
+        path: 'mandiri-nbs-automation',
+        component: MandiriNbsAutomationComponent
+      },
+      { path: 'nms-availability', component: NmsAvailabilityComponent }
+    ]
   }
 ];
 
