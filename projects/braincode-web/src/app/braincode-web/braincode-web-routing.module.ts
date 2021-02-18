@@ -30,6 +30,8 @@ import { GagEFinanceComponent } from './projects/gag-e-finance/gag-e-finance.com
 import { NmsIpBackboneComponent } from './projects/nms-ip-backbone/nms-ip-backbone.component';
 import { MandiriNbsAutomationComponent } from './projects/mandiri-nbs-automation/mandiri-nbs-automation.component';
 import { NmsAvailabilityComponent } from './projects/nms-availability/nms-availability.component';
+import { GraphicDesignerComponent } from './careers/graphic-designer/graphic-designer.component';
+import { UiuxDesignerComponent } from './careers/uiux-designer/uiux-designer.component';
 
 const routes: Routes = [
   {
@@ -57,7 +59,9 @@ const routes: Routes = [
     path: 'careers',
     children: [
       { path: '', component: CareersComponent },
-      { path: 'android-programmer', component: AndroidProgrammerComponent }
+      { path: 'android-programmer', component: AndroidProgrammerComponent },
+      { path: 'graphic-designer', component: GraphicDesignerComponent },
+      { path: 'uiux-designer', component: UiuxDesignerComponent }
     ]
   },
 

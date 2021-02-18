@@ -18,6 +18,8 @@
 @import './app/features/examples/theming/parent/parent.component.scss-theme';
 @import './app/features/examples/theming/child/child.component.scss-theme';
 @import './app/features/examples/examples/examples.component.scss-theme';
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 
 @mixin custom-components-theme($theme) {
   @include anms-styles-reset-theme($theme);
