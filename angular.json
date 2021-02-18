@@ -8,7 +8,7 @@
       "schematics": {
         "@schematics/angular:component": {
           "changeDetection": "OnPush",
-          "style": ["node_modules/bootstrap/dist/css/bootstrap.min.css"]
+          "style": "scss"
         }
       },
       "root": "projects/braincode-web",
@@ -33,7 +33,10 @@
               "projects/braincode-web/src/styles.scss",
               "node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
