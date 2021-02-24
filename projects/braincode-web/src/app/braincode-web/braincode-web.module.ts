@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BraincodeWebRoutingModule } from './braincode-web-routing.module';
 import { BraincodeWebComponent } from './braincode-web.component';
@@ -42,6 +42,7 @@ import { More5Component } from './news/more5/more5.component';
     MatButtonModule,
     NgbModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
