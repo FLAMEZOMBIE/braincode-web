@@ -60,14 +60,14 @@
                   "name": "polyfills",
                   "baseline": "150kb",
                   "maximumWarning": "50kb",
-                  "maximumError": "100kb"
+                  "maximumError": "1000kb"
                 },
                 {
                   "type": "bundle",
                   "name": "styles",
                   "baseline": "280kb",
-                  "maximumWarning": "50kb",
-                  "maximumError": "100kb"
+                  "maximumWarning": "50000000kb",
+                  "maximumError": "10000000000000kb"
                 },
                 {
                   "type": "bundle",
