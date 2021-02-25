@@ -40,7 +40,7 @@ body {
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: red;
+  background-color: #bd2125;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -124,4 +124,13 @@ body {
 .client {
   padding-top: 5%;
   padding-left: 5%;
+}
+
+.carousel-caption {
+  z-index: 10;
+  color: #000000;
+  left: 0;
+  height: 500px;
+  width: 90%;
+  margin-left: 100px;
 }

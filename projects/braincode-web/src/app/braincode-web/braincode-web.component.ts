@@ -29,11 +29,11 @@ export class BraincodeWebComponent implements OnInit {
       this.router.navigate(['/braincode-web/news/more2']);
     } else if (url == 'sub6') {
       this.router.navigate(['/braincode-web/news/more3']);
-    } else if (url == 'sub6') {
+    } else if (url == 'sub7') {
       this.router.navigate(['/braincode-web/nms']);
-    } else if (url == 'sub6') {
+    } else if (url == 'sub8') {
       this.router.navigate(['/braincode-web/gagnikel']);
-    } else if (url == 'sub6') {
+    } else if (url == 'sub9') {
       this.router.navigate(['/braincode-web/geisaindex']);
     } else {
       this.router.navigate(['/braincode-web/careers']);

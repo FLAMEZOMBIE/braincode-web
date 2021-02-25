@@ -32,26 +32,19 @@ import { MandiriNbsAutomationComponent } from './projects/mandiri-nbs-automation
 import { NmsAvailabilityComponent } from './projects/nms-availability/nms-availability.component';
 import { GraphicDesignerComponent } from './careers/graphic-designer/graphic-designer.component';
 import { UiuxDesignerComponent } from './careers/uiux-designer/uiux-designer.component';
-import { NmsComponent } from '../nms/nms.component';
-import { GagnikelComponent } from '../gagnikel/gagnikel.component';
-import { GeisaindexComponent } from '../geisaindex/geisaindex.component';
+import { NmsComponent } from './nms/nms.component';
+import { GagnikelComponent } from './gagnikel/gagnikel.component';
+import { GeisaindexComponent } from './geisaindex/geisaindex.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: BraincodeWebComponent
-  },
-  {
-    path: 'nms',
-    component: NmsComponent
-  },
-  {
-    path: 'gagnikel',
-    component: GagnikelComponent
-  },
-  {
-    path: 'geisaindex',
-    component: GeisaindexComponent
+    children: [
+      { path: '', component: BraincodeWebComponent },
+      { path: 'nms', component: NmsComponent },
+      { path: 'gagnikel', component: GagnikelComponent },
+      { path: 'geisaindex', component: GeisaindexComponent }
+    ]
   },
   {
     path: 'about',

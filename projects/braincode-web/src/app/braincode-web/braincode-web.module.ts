@@ -18,7 +18,9 @@ import { More2Component } from './news/more2/more2.component';
 import { More3Component } from './news/more3/more3.component';
 import { More4Component } from './news/more4/more4.component';
 import { More5Component } from './news/more5/more5.component';
-
+import { GagnikelComponent } from './gagnikel/gagnikel.component';
+import { GeisaindexComponent } from './geisaindex/geisaindex.component';
+import { NmsComponent } from './nms/nms.component';
 @NgModule({
   declarations: [
     BraincodeWebComponent,
@@ -34,7 +36,10 @@ import { More5Component } from './news/more5/more5.component';
     More2Component,
     More3Component,
     More4Component,
-    More5Component
+    More5Component,
+    GagnikelComponent,
+    GeisaindexComponent,
+    NmsComponent
   ],
   imports: [
     CommonModule,
